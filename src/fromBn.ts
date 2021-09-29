@@ -4,8 +4,8 @@ import { BigNumber, FixedNumber } from "@ethersproject/bignumber";
  * Convert a big number with a custom number of decimals to a stringified fixed-point number.
  */
 export function fromBn(x: BigNumber, decimals: number = 18): string {
-  if (x === undefined || x instanceof BigNumber === false) {
-    throw new Error("Input must be an ethers BigNumber");
+  if (x === undefined) {
+    throw new Error("Input must not be undefined");
   }
 
   if (decimals < 1 || decimals > 77) {

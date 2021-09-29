@@ -63,7 +63,7 @@
     "coverage": "yarn nyc --nycrc-path ./.nycrc.yaml mocha",
     "lint": "yarn lint:ts && yarn prettier:check && yarn typecheck",
     "lint:ts": "eslint --config ./.eslintrc.yaml --ignore-path ./.eslintignore --ext .ts .",
-    "_postinstall": "husky install",
+    "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepack": "yarn build",
     "prepublishOnly": "pinst --disable",

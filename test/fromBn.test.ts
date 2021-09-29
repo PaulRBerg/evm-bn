@@ -5,15 +5,14 @@ import forEach from "mocha-each";
 import { fromBn } from "../src";
 
 describe("fromBn", function () {
-  describe("when x is not a big number", function () {
-    const testSets = [undefined, null, true, 2.71, Math.PI, "3.14", { x: 100 }, function () {}];
-
-    forEach(testSets).it("throws an error", function (x: any) {
-      expect(() => fromBn(x)).toThrow("Input must be an ethers BigNumber");
+  describe("when x is undefined", function () {
+    it("throws an error", function () {
+      const x: any = undefined;
+      expect(() => fromBn(x)).toThrow("Input must not be undefined");
     });
   });
 
-  describe("when x is a big number", function () {
+  describe("when x is not undefined", function () {
     describe("when the number of decimals is out of bounds", function () {
       const testSets = [-1729, 0, 78, 1729];
 
