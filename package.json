@@ -1,7 +1,7 @@
 {
   "name": "evm-bn",
   "description": "Convert fixed-point numbers to ethers big numbers and vice-versa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Paul Razvan Berg",
     "url": "https://paulrberg.com"
