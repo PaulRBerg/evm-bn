@@ -38,7 +38,9 @@
   },
   "files": [
     "/dist/**/*.d.ts",
+    "/dist/**/*.d.ts.map",
     "/dist/**/*.js",
+    "/dist/**/*.js.map",
     "CHANGELOG.md"
   ],
   "keywords": [
@@ -72,6 +74,5 @@
     "test": "mocha --config ./.mocharc.yaml",
     "typecheck": "tsc --incremental false --noEmit"
   },
-  "types": "./dist/index.d.ts",
-  "packageManager": "yarn@3.1.0"
+  "types": "./dist/index.d.ts"
 }
