@@ -2412,7 +2412,7 @@ __metadata:
     ts-node: ^10.4.0
     typescript: ^4.4.4
   peerDependencies:
-    "@ethersproject/bignumber": ^5.5.0
+    "@ethersproject/bignumber": 5.x
   languageName: unknown
   linkType: soft
 
