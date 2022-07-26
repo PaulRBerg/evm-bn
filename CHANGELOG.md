@@ -2,13 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic
+The format is based on [Common Changelog](https://common-changelog.org/), and this project adheres to [Semantic
 Versioning](https://semver.org/spec/v2.0.0.html).
 
+[1.1.2]: https://github.com/paulrberg/evm-bn/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/paulrberg/evm-bn/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/paulrberg/evm-bn/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/paulrberg/evm-bn/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/paulrberg/evm-bn/releases/tag/v1.0.0
+
+## [1.1.2] - 2022-07-26
+
+### Changed
+
+- Adhere to Common Changelog in `CHANGELOG.md` (@paulrberg)
+- Change the license from "Unlicense" to "MIT" (@paulrberg)
+- Fix number of decimals in error message in `fromBn` function (@paulrberg)
+- Polish the README (@paulrberg)
 
 ## [1.1.1] - 2021-10-27
 
@@ -36,4 +46,4 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-- First release of the package.
+- First release of the package (@paulrberg)
