@@ -1,4 +1,13 @@
-# Evm Bn [![Coverage Status](https://coveralls.io/repos/github/paulrberg/evm-bn/badge.svg?branch=main)](https://coveralls.io/github/paulrberg/evm-bn?branch=main) [![Styled with Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io) [![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![license: Unlicense](https://img.shields.io/badge/license-Unlicense-yellow.svg)](https://unlicense.org/)
+# Evm Bn [![GitHub Actions][gha-badge]][gha] [![Coverage Status][coveralls-badge]][coveralls] [![Styled with Prettier][prettier-badge]][prettier] [![License: MIT][license-badge]][license]
+
+[gha]: https://github.com/paulrberg/evm-bn/actions
+[gha-badge]: https://github.com/paulrberg/evm-bn/actions/workflows/ci.yml/badge.svg
+[coveralls]: https://coveralls.io/github/paulrberg/evm-bn
+[coveralls-badge]: https://coveralls.io/repos/github/paulrberg/evm-bn/badge.svg?branch=main
+[prettier]: https://prettier.io
+[prettier-badge]: https://img.shields.io/badge/Code_Style-Prettier-ff69b4.svg
+[license]: https://opensource.org/licenses/MIT
+[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 
 Convert fixed-point numbers to [ethers](https://github.com/ethers-io/ethers.js) big numbers and vice-versa. This is
 useful for [EVM](https://ethereum.org)-related projects, since 1 ETH is 1e18 wei.
@@ -65,12 +74,14 @@ Feel free to dive in! [Open](https://github.com/paulrberg/evm-bn/issues/new) an 
 
 ### Set Up
 
-Install the dependencies:
+Clone the repositories and install the dependencies:
 
 ```bash
 $ yarn install
 ```
 
+Now you can start making changes.
+
 ## License
 
-[Unlicense](./LICENSE.md) © Paul Razvan Berg
+[MIT](./LICENSE.md) © Paul Razvan Berg

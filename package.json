@@ -49,10 +49,12 @@
     "ethereum",
     "ethers",
     "evm",
+    "javascript",
     "number-formatting"
   ],
-  "license": "Unlicense",
+  "license": "MIT",
   "main": "./dist/index.js",
+  "packageManager": "yarn@3.2.2",
   "peerDependencies": {
     "@ethersproject/bignumber": "5.x"
   },
@@ -69,8 +71,8 @@
     "postpublish": "pinst --enable",
     "prepack": "yarn build",
     "prepublishOnly": "pinst --disable",
-    "prettier": "prettier --config \"./.prettierrc.yml\" --write \"**/*.{js,json,md,ts}\"",
-    "prettier:check": "prettier --check --config \"./.prettierrc.yml\" \"**/*.{js,json,md,ts}\"",
+    "prettier": "prettier --config \"./.prettierrc.yml\" --write \"**/*.{js,json,md,ts,yml}\"",
+    "prettier:check": "prettier --check --config \"./.prettierrc.yml\" \"**/*.{js,json,md,ts,yml}\"",
     "test": "mocha --config \"./.mocharc.yml\"",
     "typecheck": "tsc --incremental false --noEmit"
   },
