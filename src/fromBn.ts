@@ -9,7 +9,7 @@ export function fromBn(x: BigNumber, decimals: number = 18): string {
   }
 
   if (decimals < 1 || decimals > 77) {
-    throw new Error("Decimals must be between 1 and 18");
+    throw new Error("Decimals must be between 1 and 77");
   }
 
   const result: string = FixedNumber.fromValue(x, decimals, `fixed256x${decimals}`).toString();

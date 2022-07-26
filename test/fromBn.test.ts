@@ -18,7 +18,7 @@ describe("fromBn", function () {
 
       forEach(testSets).it("throws an error", function (decimals: number) {
         const x = BigNumber.from("3141592653589793238");
-        expect(() => fromBn(x, decimals)).toThrow("Decimals must be between 1 and 18");
+        expect(() => fromBn(x, decimals)).toThrow("Decimals must be between 1 and 77");
       });
     });
 
