@@ -47,7 +47,6 @@
   ],
   "license": "MIT",
   "main": "./dist/index.js",
-  "packageManager": "yarn@3.2.2",
   "peerDependencies": {
     "@ethersproject/bignumber": "5.x"
   },
@@ -57,10 +56,10 @@
   "scripts": {
     "build": "tsc --build \"./tsconfig.prod.json\"",
     "clean": "shx rm -rf ./coverage ./dist",
-    "coverage": "yarn nyc --nycrc-path \"./.nycrc.yml\" mocha",
-    "lint": "yarn lint:ts && yarn prettier:check && yarn typecheck",
+    "coverage": "pnpm nyc --nycrc-path \"./.nycrc.yml\" mocha",
+    "lint": "pnpm lint:ts && pnpm prettier:check && pnpm typecheck",
     "lint:ts": "eslint --config \"./.eslintrc.yml\" --ignore-path \"./.eslintignore\" --ext .ts .",
-    "prepack": "yarn build",
+    "prepack": "pnpm build",
     "prettier": "prettier --config \"./.prettierrc.yml\" --write \"**/*.{js,json,md,ts,yml}\"",
     "prettier:check": "prettier --check --config \"./.prettierrc.yml\" \"**/*.{js,json,md,ts,yml}\"",
     "test": "mocha --config \"./.mocharc.yml\"",

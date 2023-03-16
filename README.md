@@ -20,16 +20,8 @@ useful for [EVM](https://ethereum.org)-related projects, since 1 ETH is 1e18 wei
 
 ## Install
 
-With yarn:
-
 ```sh
-$ yarn add evm-bn
-```
-
-Or npm:
-
-```sh
-$ npm install evm-bn
+$ pnpm add evm-bn
 ```
 
 ## Usage
@@ -77,7 +69,7 @@ Feel free to dive in! [Open](https://github.com/paulrberg/evm-bn/issues/new) an 
 Clone the repositories and install the dependencies:
 
 ```bash
-$ yarn install
+$ pnpm install
 ```
 
 Now you can start making changes.
