@@ -21,7 +21,7 @@ export function toBn(x: string, decimals: number = 18): BigNumber {
   let xs: string = x;
 
   // Convert from exponential notation.
-  if (x.includes("e")) {
+  if (x.includes("e") || x.includes("E")) {
     xs = fromExponential(x);
   }
 
