@@ -1,9 +1,5 @@
 name: "CI"
 
-env:
-  COVERAGE_GIT_BRANCH: "main"
-  COVERAGE_SERVICE_NAME: "github-actions-ci"
-
 on:
   pull_request:
   push:
