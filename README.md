@@ -1,9 +1,9 @@
-# Evm Bn [![GitHub Actions][gha-badge]][gha] [![Coverage Status][coveralls-badge]][coveralls] [![Styled with Prettier][prettier-badge]][prettier] [![License: MIT][license-badge]][license]
+# Evm Bn [![GitHub Actions][gha-badge]][gha] [![Coverage][codecov-badge]][codecov] [![Styled with Prettier][prettier-badge]][prettier] [![License: MIT][license-badge]][license]
 
-[gha]: https://github.com/paulrberg/evm-bn/actions
-[gha-badge]: https://github.com/paulrberg/evm-bn/actions/workflows/ci.yml/badge.svg
-[coveralls]: https://coveralls.io/github/paulrberg/evm-bn
-[coveralls-badge]: https://coveralls.io/repos/github/paulrberg/evm-bn/badge.svg?branch=main
+[gha]: https://github.com/PaulRBerg/evm-bn/actions
+[gha-badge]: https://github.com/PaulRBerg/evm-bn/actions/workflows/ci.yml/badge.svg
+[codecov]: https://codecov.io/gh/PaulRBerg/evm-bn
+[codecov-badge]: https://codecov.io/gh/PaulRBerg/evm-bn/branch/main/graph/badge.svg
 [prettier]: https://prettier.io
 [prettier-badge]: https://img.shields.io/badge/Code_Style-Prettier-ff69b4.svg
 [license]: https://opensource.org/licenses/MIT
@@ -15,8 +15,10 @@ useful for [EVM](https://ethereum.org)-related projects, since 1 ETH is 1e18 wei
 - Accepts scientific notation.
 - Limits the precision to 78 digits.
 - Enforces 60 integer digits and 18 fractional digits.
-- Designed to be used alongside [@ethersproject/bignumber](https://github.com/ethers-io/ethers.js/tree/master/packages/bignumber).
-- Slices the fractional digits automatically at position `n + 1` and above, with `n` the number of decimals, rounding down in the process.
+- Designed to be used alongside
+  [@ethersproject/bignumber](https://github.com/ethers-io/ethers.js/tree/master/packages/bignumber).
+- Slices the fractional digits automatically at position `n + 1` and above, with `n` the number of decimals, rounding
+  down in the process.
 
 ## Install
 
@@ -62,7 +64,8 @@ const baz: BigNumber = fromBn(BigNumber.from("100000000000000"), 6);
 
 ## Contributing
 
-Feel free to dive in! [Open](https://github.com/paulrberg/evm-bn/issues/new) an issue, [start](https://github.com/paulrberg/evm-bn/discussions/new) a discussion or submit a PR.
+Feel free to dive in! [Open](https://github.com/PaulRBerg/evm-bn/issues/new) an issue,
+[start](https://github.com/PaulRBerg/evm-bn/discussions/new) a discussion or submit a PR.
 
 ### Set Up
 

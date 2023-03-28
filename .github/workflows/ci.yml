@@ -7,6 +7,7 @@ env:
 on:
   pull_request:
   push:
+  workflow_dispatch:
     branches:
       - "main"
 
@@ -23,7 +24,7 @@ jobs:
           version: "latest"
 
       - name: "Install Node.js"
-        uses: "actions/setup-node@v2"
+        uses: "actions/setup-node@v3"
         with:
           cache: "pnpm"
           node-version: "lts/*"
@@ -37,8 +38,7 @@ jobs:
       - name: "Run the tests and generate the coverage report"
         run: "pnpm coverage"
 
-      - name: "Upload the coverage report to Coveralls"
-        uses: "coverallsapp/github-action@master"
+      - name: "Upload coverage reports to Codecov"
+        uses: "codecov/codecov-action@v3"
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: "./coverage/lcov.info"
+          files: "./coverage/lcov.info"
