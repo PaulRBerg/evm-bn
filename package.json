@@ -24,7 +24,7 @@
     "mocha-each": "^2.0.1",
     "nyc": "^15.1.0",
     "prettier": "^2.4.1",
-    "shx": "^0.3.3",
+    "rimraf": "^4.4.1",
     "source-map-support": "^0.5.20",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
@@ -55,14 +55,14 @@
   },
   "scripts": {
     "build": "tsc --build \"./tsconfig.prod.json\"",
-    "clean": "shx rm -rf ./coverage ./dist",
-    "coverage": "pnpm nyc --nycrc-path \"./.nycrc.yml\" mocha",
+    "clean": "rimraf coverage dist",
+    "coverage": "pnpm nyc mocha",
     "lint": "pnpm lint:ts && pnpm prettier:check && pnpm typecheck",
-    "lint:ts": "eslint --config \"./.eslintrc.yml\" --ignore-path \"./.eslintignore\" --ext .ts .",
+    "lint:ts": "eslint --ext .ts .",
     "prepack": "pnpm build",
-    "prettier": "prettier --config \"./.prettierrc.yml\" --write \"**/*.{js,json,md,ts,yml}\"",
-    "prettier:check": "prettier --check --config \"./.prettierrc.yml\" \"**/*.{js,json,md,ts,yml}\"",
-    "test": "mocha --config \"./.mocharc.yml\"",
+    "prettier:check": "prettier --check \"**/*.{js,json,md,ts,yml}\"",
+    "prettier:write": "prettier --write \"**/*.{js,json,md,ts,yml}\"",
+    "test": "mocha",
     "typecheck": "tsc --incremental false --noEmit"
   },
   "types": "./dist/index.d.ts"
