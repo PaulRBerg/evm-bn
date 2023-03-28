@@ -9,8 +9,9 @@
 [license]: https://opensource.org/licenses/MIT
 [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 
-Convert fixed-point numbers to [ethers](https://github.com/ethers-io/ethers.js) big numbers and vice-versa. This is
-useful for [EVM](https://ethereum.org)-related projects, since 1 ETH is 1e18 wei.
+Evm Bn is a utility for converting between stringified fixed-point numbers and
+[Ethers.js](https://github.com/ethers-io/ethers.js) BigNumbers, as well as the reverse process. It is particularly
+useful for projects based on the Ethereum Virtual Machine (EVM), given that 1 ETH is equivalent to 1e18 wei.
 
 - Accepts scientific notation.
 - Limits the precision to 78 digits.
@@ -71,7 +72,7 @@ Feel free to dive in! [Open](https://github.com/PaulRBerg/evm-bn/issues/new) an 
 
 Clone the repositories and install the dependencies:
 
-```bash
+```sh
 $ pnpm install
 ```
 
