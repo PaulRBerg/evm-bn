@@ -30,7 +30,7 @@ jobs:
           node-version: "lts/*"
 
       - name: "Install the dependencies"
-        run: "pnpm install"
+        run: "pnpm install --no-frozen-lockfile"
 
       - name: "Lint the code"
         run: "pnpm lint"
