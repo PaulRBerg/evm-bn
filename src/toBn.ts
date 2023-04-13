@@ -15,7 +15,7 @@ export function toBn(x: string, decimals: number = 18): BigNumber {
   }
 
   if (decimals < 0 || decimals > 77) {
-    throw new Error("Decimals must be between 1 and 77");
+    throw new Error("Decimals must be between 0 and 77");
   }
 
   let xs: string = x;
