@@ -14,8 +14,8 @@ export function toBn(x: string, decimals: number = 18): BigNumber {
     throw new Error("Input must be a string");
   }
 
-  if (decimals < 1 || decimals > 77) {
-    throw new Error("Decimals must be between 1 and 77");
+  if (decimals < 0 || decimals > 77) {
+    throw new Error("Decimals must be between 0 and 77");
   }
 
   let xs: string = x;
@@ -34,7 +34,7 @@ export function toBn(x: string, decimals: number = 18): BigNumber {
 
   // Check if x is a whole number or a fixed-point number with some maximum number of decimals.
   const digits: number = 78 - decimals;
-  const regexp: RegExp = new RegExp(`^[-+]?(\\d{1,${digits}}|(?=\\d+\\.\\d+)\\d{1,${digits}}\\.\\d{1,${decimals}})$`);
+  const regexp: RegExp = new RegExp(`^[-+]?(\\d{1,${digits}}|(?=\\d+\\.\\d+)\\d{1,${digits}}\\.\\d{0,${decimals}})$`);
 
   if (regexp.test(xs)) {
     return parseFixed(xs, decimals);
